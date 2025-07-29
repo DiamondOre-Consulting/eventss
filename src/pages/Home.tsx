@@ -8,6 +8,7 @@ import img5 from '../assets/img5.jpg';
 import img6 from '../assets/img6.jpg';
 import { Gallery } from '../components/Gallery';
 import Feature3 from '../components/mvpblocks/feature-3';
+import { Services } from '../components/Services';
 import { Testimonial } from '../components/ui/Testimonial';
 import VideoCarousel from '../components/VideoSection';
 const Home = () => {
@@ -112,6 +113,16 @@ Eventours India has been internationally acclaimed for our distinctive vision in
 
 </div>
 </div>
+
+<div className=" w-full relative pt-16">
+   <h2 className="text-5xl md:text-6xl text-center text-[#155A52] font-heading  italic  font-light ">
+        <em className="">Our</em> Services
+
+            </h2>
+      <div className="">
+        <Services />
+      </div>
+    </div>
 
 <Gallery/>
 

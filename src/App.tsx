@@ -1,4 +1,5 @@
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import HomeLayout from './Layout/HomeLayout';
 import About from './pages/About';
 import Gallery from './pages/Gallery';
@@ -8,8 +9,16 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import RefundPolicy from './pages/RefundPolicy';
 
 const App = () => {
+const location = useLocation();
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [location.pathname]);
+
   return (
-    <Router>
+    <>
       <HomeLayout>
 
         <Routes>
@@ -21,7 +30,7 @@ const App = () => {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </HomeLayout>
-    </Router>
+    </>
   );
 };
 

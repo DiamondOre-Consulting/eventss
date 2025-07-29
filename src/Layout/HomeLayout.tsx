@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import Footer from '../components/Footer';
 interface HomeLayoutProps {
@@ -10,7 +11,9 @@ const HomeLayout: React.FC<HomeLayoutProps> = ({ children }) => {
     <div className="flex flex-col min-h-screen bg-[#FDF6EE] text-gray-900">
       <header className="absolute top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/40 to-transparent py-4 px-6">
         <div className="container mx-auto flex justify-center items-center">
-            <img src={logo} className="h-15" alt="" />
+           <Link to={"/"}>
+ <img src={logo} className="h-15" alt="" />
+</Link>
           {/* <nav>
             <ul className="flex space-x-8 text-white font-medium">
               <li><a href="/" className="hover:text-gray-300 transition-colors">Home</a></li>
