@@ -9,124 +9,55 @@ const SQRT_5000 = Math.sqrt(5000);
 const testimonials = [
   {
     tempId: 0,
-    testimonial: "Our trip with COMPANY was unforgettable. The itinerary was perfectly tailored to our preferences.",
-    by: "Alex, CEO at TravelTech",
+    testimonial: "When I booked, I knew how to start but by sheer luck, my buddy recommended Mr. Maheshwari, the owner of the event tour. He gave us an amazing itinerary and thanks to his help, we saw a ton of attractions at a really good price.",
+    by: "Jitender Singh",
     imgSrc: "https://i.pravatar.cc/150?img=1"
   },
-  {
-    tempId: 1,
-    testimonial: "COMPANY ensured our travels were stress-free. Their attention to detail is unmatched.",
-    by: "Dan, CTO at ExploreNet",
-    imgSrc: "https://i.pravatar.cc/150?img=2"
-  },
+
   {
     tempId: 2,
-    testimonial: "Thanks to COMPANY, we experienced the most amazing destinations. Highly recommend!",
-    by: "Stephanie, COO at WanderCo",
+    testimonial: "We planned a Trip to Mauritius with Eventours Mudit and he planned it meticulously, all arrangements were done before we reached for our stay , he chose the perfect resort and helped us planning airlines and activities there ! We had an amazing trip ! Thanks to Mudit ! Will definitely recommend your service to friends and family!",
+    by: "Rati Mehrotra",
     imgSrc: "https://i.pravatar.cc/150?img=3"
   },
   {
     tempId: 3,
-    testimonial: "Traveling with COMPANY was a breeze. They took care of everything for us.",
-    by: "Marie, CFO at JourneyPlanning",
+    testimonial: "My family and I have been booking holidays all over the world with Mudit and Eventours for almost 10 yrs now and we have never been disappointed. Right from the stage of deciding on the destination till the actual travel, Mudit gets personally involved with every single detail, ensuring that he is giving you not only the best deal but also the best experience .",
+    by: "Ritika Sharan",
     imgSrc: "https://i.pravatar.cc/150?img=4"
   },
   {
     tempId: 4,
-    testimonial: "COMPANY turned our vacation dreams into reality. An experience we'll never forget.",
-    by: "Andre, Head of Design at AdventureSolutions",
+    testimonial: "On our recent trip to Spain, we reached out to Eventours and Mudit for help with all the planning and the itinerary. Mudit takes a personal interest and was extremely meticulous with his planning and organisation of the entire trip and we didnt have to worry about a thing! Even when we had a contingency while on the trip, Mudit helped us resolve the issue asap.",
+    by: "Anjali krishnakumar",
     imgSrc: "https://i.pravatar.cc/150?img=5"
   },
   {
     tempId: 5,
-    testimonial: "Our family vacation was flawless, thanks to COMPANY's expert planning.",
-    by: "Jeremy, Product Manager at FamilyTravels",
+    testimonial: "I recently booked a trip through EVENTOURS and I must say it was a fantastic experience from start to finish. The itinerary was well-planned, accommodations were comfortable, and the transport was punctual. Every detail was taken care of, allowing us to simply relax and enjoy our vacation.",
+    by: "Nidhi Singh",
     imgSrc: "https://i.pravatar.cc/150?img=6"
   },
   {
     tempId: 6,
-    testimonial: "I was skeptical at first, but COMPANY exceeded all expectations. We're hooked!",
-    by: "Pam, Marketing Director at GetawayBuilders",
+    testimonial: "I didn’t go, but my wife, daughter, and son went on a short trip to Goa. When my daughter returned, she exclaimed, “Wow!” It was a hassle-free trip—everything was well-planned and smoothly arranged. Thank you so much, Mudit! We’ll definitely get back to you soon!",
+    by: "Anil Rahal",
     imgSrc: "https://i.pravatar.cc/150?img=7"
   },
   {
     tempId: 7,
-    testimonial: "COMPANY's insights and recommendations made our trip truly special. Worth every penny.",
-    by: "Daniel, Data Scientist at TravelAnalytics",
+    testimonial: `Passionate !!! That is the word for Mudit. He is no regular adviser who just help in arranging and booking. He gets himself so involved in your planning, as if he himself is going with you.
+He has spent countless hours with us , just to finalize one city ,one hotel, in in our tours of France, Switzerland and Italy.`,
+    by: "Rajbir Singh",
     imgSrc: "https://i.pravatar.cc/150?img=8"
   },
   {
     tempId: 8,
-    testimonial: "Simply the best travel experience we've ever had, thanks to COMPANY.",
-    by: "Fernando, UX Designer at TravelFirst",
-    imgSrc: "https://i.pravatar.cc/150?img=9"
+    testimonial: `Mudit planned our honeymoon trip to Mauritius. He provided the detailed itinerary and customised it according to our needs and liking. The resorts, sightseeing, activities, and commute provided were all excellent. Looking forward to taking Eventours services for our future excursions as well.`,
+    by: "Diksha Madan",
+    imgSrc: "https://i.pravatar.cc/150?img=8"
   },
-  {
-    tempId: 9,
-    testimonial: "COMPANY has been our go-to for travel planning for years. Always reliable.",
-    by: "Andy, DevOps Engineer at CloudTravels",
-    imgSrc: "https://i.pravatar.cc/150?img=10"
-  },
-  {
-    tempId: 10,
-    testimonial: "We finally found the perfect travel partner in COMPANY. Highly recommend!",
-    by: "Pete, Sales Director at TravelRockets",
-    imgSrc: "https://i.pravatar.cc/150?img=11"
-  },
-  {
-    tempId: 11,
-    testimonial: "COMPANY made travel planning so easy and enjoyable. Our team loved it!",
-    by: "Marina, HR Manager at TeamTravels",
-    imgSrc: "https://i.pravatar.cc/150?img=12"
-  },
-  {
-    tempId: 12,
-    testimonial: "COMPANY's customer service is top-notch. They're always there when we need them.",
-    by: "Olivia, Customer Success Manager at CareTravels",
-    imgSrc: "https://i.pravatar.cc/150?img=13"
-  },
-  {
-    tempId: 13,
-    testimonial: "We've seen incredible efficiency gains since using COMPANY for our travels.",
-    by: "Raj, Operations Manager at StreamlineTravels",
-    imgSrc: "https://i.pravatar.cc/150?img=14"
-  },
-  {
-    tempId: 14,
-    testimonial: "COMPANY revolutionized our travel planning. It's a total game-changer!",
-    by: "Lila, Workflow Specialist at ProcessTravels",
-    imgSrc: "https://i.pravatar.cc/150?img=15"
-  },
-  {
-    tempId: 15,
-    testimonial: "COMPANY's solutions grow with us, ensuring seamless travel experiences every time.",
-    by: "Trevor, Scaling Officer at GrowthTravels",
-    imgSrc: "https://i.pravatar.cc/150?img=16"
-  },
-  {
-    tempId: 16,
-    testimonial: "COMPANY's innovation keeps our travels exciting and fresh. They're always ahead of the curve.",
-    by: "Naomi, Innovation Lead at FutureTravels",
-    imgSrc: "https://i.pravatar.cc/150?img=17"
-  },
-  {
-    tempId: 17,
-    testimonial: "The ROI we've seen with COMPANY's travel services is fantastic. Worth every cent.",
-    by: "Victor, Finance Analyst at PeakTravels",
-    imgSrc: "https://i.pravatar.cc/150?img=18"
-  },
-  {
-    tempId: 18,
-    testimonial: "COMPANY's platform makes travel planning easy and efficient. Perfectly balanced.",
-    by: "Yuki, Tech Lead at BalancedTravels",
-    imgSrc: "https://i.pravatar.cc/150?img=19"
-  },
-  {
-    tempId: 19,
-    testimonial: "We've tried many services, but COMPANY stands out for its reliability and performance.",
-    by: "Zoe, Performance Manager at ReliableTravels",
-    imgSrc: "https://i.pravatar.cc/150?img=20"
-  }
+
 ];
 
 interface TestimonialCardProps {
@@ -175,16 +106,16 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
           height: 2
         }}
       />
-      <img
+      {/* <img
         src={testimonial.imgSrc}
         alt={`${testimonial.by.split(',')[0]}`}
         className="mb-4 h-14 w-12 bg-muted object-cover object-top"
         style={{
           boxShadow: "3px 3px 0px hsl(var(--background))"
         }}
-      />
+      /> */}
       <h3 className={cn(
-        "text-base sm:text-xl font-medium",
+        "text-base  font-medium",
         isCenter ? "text-primary-foreground" : "text-foreground"
       )}>
         "{testimonial.testimonial}"
