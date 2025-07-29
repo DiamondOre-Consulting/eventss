@@ -7,7 +7,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const VideoCarousel = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeVideo, setActiveVideo] = useState(null);
-  const [searchQuery, setSearchQuery] = useState("");
   const swiperRef = useRef(null);
 
   // Sample video data - replace with your actual videos
@@ -67,9 +66,9 @@ const VideoCarousel = () => {
     setActiveVideo(null);
   };
 
-  const filteredVideos = videos.filter((video) =>
-    video.title.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredVideos = videos.filter((video) => {
+    return
+  } );
 
   return (
     <section id="inspiration" className="w-full relative pt-10">
