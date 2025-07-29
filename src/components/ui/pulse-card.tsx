@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
+import { motion } from 'framer-motion';
+import React from 'react';
 
 interface CardProps {
   icon: React.ReactNode;
@@ -15,7 +15,7 @@ interface CardProps {
   showGridLines?: boolean;
 }
 
-export const VARIANTS = {
+const VARIANTS = {
   emerald: {
     accent: 'rose-500',
     gradient: 'from-rose-500/20 to-rose-500/0',
@@ -79,6 +79,8 @@ const SIZES = {
   },
 };
 
+export { SIZES, VARIANTS };
+
 export function CardHoverEffect({
   icon,
   title,
@@ -89,7 +91,7 @@ export function CardHoverEffect({
   glowEffect = false,
   hoverScale = 1.02,
   interactive = true,
-  showGridLines = true,
+  // showGridLines = true,
 }: CardProps) {
   const variantConfig = VARIANTS[variant];
   const sizeConfig = SIZES[size];

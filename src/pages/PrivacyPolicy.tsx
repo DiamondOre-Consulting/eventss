@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import Footer from '../components/Footer';
 
 function PrivacyPolicy() {
   useEffect(() => {
@@ -87,7 +86,6 @@ function PrivacyPolicy() {
           </section>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

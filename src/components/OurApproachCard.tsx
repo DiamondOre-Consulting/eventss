@@ -77,10 +77,10 @@ export default function OurApproachCard() {
     className: 'relative overflow-hidden py-20',
   };
 
-  const missionRef = useRef(null);
+  // const missionRef = useRef(null);
   const valuesRef = useRef(null);
 
-  const missionInView = useInView(missionRef, { once: true, amount: 0.3 });
+  // const missionInView = useInView(missionRef, { once: true, amount: 0.3 });
   const valuesInView = useInView(valuesRef, { once: true, amount: 0.3 });
 
   return (

@@ -5,7 +5,7 @@ import React, { useState } from "react";
 
 type Card = {
   id: number;
-  content: JSX.Element | React.ReactNode | string;
+  content: React.ReactNode | string;
   className: string;
   thumbnail: string;
 };
@@ -14,10 +14,10 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
   const [selected, setSelected] = useState<Card | null>(null);
   const [lastSelected, setLastSelected] = useState<Card | null>(null);
 
-  const handleClick = (card: Card) => {
-    setLastSelected(selected);
-    setSelected(card);
-  };
+  // const handleClick = (card: Card) => {
+  //   setLastSelected(selected);
+  //   setSelected(card);
+  // };
 
   const handleOutsideClick = () => {
     setLastSelected(selected);

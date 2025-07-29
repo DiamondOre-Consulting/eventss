@@ -1,12 +1,12 @@
 import emailjs from '@emailjs/browser';
-import { useRef, useState, type ReactNode } from 'react';
+import { useRef, useState } from 'react';
 import { FaEnvelope, FaFacebookF, FaInstagram, FaMapMarkerAlt, FaPhone, FaWhatsapp } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import BNILogo from "../assets/BNILogo.png";
 import IOTOLogo from "../assets/IATOLogo.jpg";
 type ContactItem = {
-  icon: Element | ReactNode;
+  icon: React.ReactNode;
   text: string;
   link?: string;
 };

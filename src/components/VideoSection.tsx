@@ -1,16 +1,25 @@
 import { IconPlayerPlay, IconX } from "@tabler/icons-react";
 import { useEffect, useRef, useState } from "react";
+import type { Swiper as SwiperType } from "swiper";
+// @ts-expect-error: swiper/css does not have TypeScript types
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+interface Video {
+  id: number;
+  title: string;
+  src: string;
+  thumbnail: string;
+}
+
 const VideoCarousel = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [activeVideo, setActiveVideo] = useState(null);
-  const swiperRef = useRef(null);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [activeVideo, setActiveVideo] = useState<Video | null>(null);
+  const swiperRef = useRef<SwiperType | null>(null);
 
   // Sample video data - replace with your actual videos
-  const videos = [
+  const videos: Video[] = [
     {
       id: 1,
       title: "Discover Oman, a haven for adventure enthusiasts",
@@ -48,10 +57,10 @@ const VideoCarousel = () => {
     };
   }, [isModalOpen]);
 
-  const openModal = (video) => {
+  const openModal = (video: Video) => {
     // Pause autoplay when modal opens
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.autoplay.stop();
+    if (swiperRef.current) {
+      swiperRef.current.autoplay?.stop();
     }
     setActiveVideo(video);
     setIsModalOpen(true);
@@ -59,16 +68,16 @@ const VideoCarousel = () => {
 
   const closeModal = () => {
     // Resume autoplay when modal closes
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.autoplay.start();
+    if (swiperRef.current) {
+      swiperRef.current.autoplay?.start();
     }
     setIsModalOpen(false);
     setActiveVideo(null);
   };
 
-  const filteredVideos = videos.filter((video) => {
-    return
-  } );
+  const filteredVideos = videos.filter((video) =>
+    video.title.toLowerCase().includes("")
+  );
 
   return (
     <section id="inspiration" className="w-full relative pt-10">
@@ -83,6 +92,7 @@ const VideoCarousel = () => {
       </div>
       <div className="w-full h-screen max-h-[80vh]">
         <Swiper
+// @ts-expect-error: swiper/css does not have TypeScript types
           ref={swiperRef}
           modules={[Autoplay]}
           spaceBetween={0}
@@ -110,7 +120,7 @@ const VideoCarousel = () => {
                   onClick={() => openModal(video)}
                 >
                   <h2 className="text-3xl md:text-4xl text-white font-semibold">
-                    {video?.title}
+                    {video.title}
                   </h2>
                   <div className="bg-white/70 rounded-full p-3 hover:bg-opacity-100 transition-all">
                     <IconPlayerPlay className="h-10 w-10 text-gray-900" />
