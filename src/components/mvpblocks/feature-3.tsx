@@ -1,11 +1,11 @@
 import { cn } from '@/lib/utils';
 import {
-  Building2,
-  Lightbulb,
-  ScreenShare,
-  Trophy,
-  User,
-  User2,
+  Globe,
+  MapPlus,
+  NotebookTabs,
+  Phone,
+  Plane,
+  Route
 } from 'lucide-react';
 
 // Define the feature item type
@@ -20,7 +20,7 @@ type FeatureItem = {
 // Create feature data arrays for left and right columns
 const leftFeatures: FeatureItem[] = [
   {
-    icon: Building2,
+    icon: Globe,
     title: 'MOBILE CONCIERGE',
     description:
       'A dedicated concierge team provides expert support and guidance before and throughout your journey, ensuring a smooth and personalized travel experience.',
@@ -28,7 +28,7 @@ const leftFeatures: FeatureItem[] = [
     cornerStyle: 'sm:translate-x-4 sm:rounded-br-[2px]',
   },
   {
-    icon: User2,
+    icon: MapPlus,
     title: 'DETAILED SIGHTSEEING PLAN',
     description:
       `A customized sightseeing itinerary ensures you never have to stress about the 'where, what, and how' of your vacation.`,
@@ -36,7 +36,7 @@ const leftFeatures: FeatureItem[] = [
     cornerStyle: 'sm:-translate-x-4 sm:rounded-br-[2px]',
   },
   {
-    icon: Trophy,
+    icon: Phone,
     title: 'EXPERT TRAVEL PLANNERS',
     description:
       'Expert travel planners curate your journey with deep global insight, ensuring a personalized and enriching experience at every destination.',
@@ -47,7 +47,7 @@ const leftFeatures: FeatureItem[] = [
 
 const rightFeatures: FeatureItem[] = [
   {
-    icon: ScreenShare,
+    icon: NotebookTabs ,
     title: 'DETAIL-ORIENTED',
     description:
       'A fully personalized itinerary ensures a fun and fulfilling holiday for travelers of all ages and interests.',
@@ -55,7 +55,7 @@ const rightFeatures: FeatureItem[] = [
     cornerStyle: 'sm:-translate-x-4 sm:rounded-bl-[2px]',
   },
   {
-    icon: User,
+    icon: Plane,
     title: 'VACATION OF A LIFETIME',
     description:
       'We craft unforgettable experiences, ensuring every moment of your cherished holiday is truly exceptional.',
@@ -63,7 +63,7 @@ const rightFeatures: FeatureItem[] = [
     cornerStyle: 'sm:translate-x-4 sm:rounded-bl-[2px]',
   },
   {
-    icon: Lightbulb,
+    icon: Route,
     title: 'IT IS YOUR TRIP',
     description:
       'No generic group tours—our personalized approach puts you in complete control of your holiday experience.',
@@ -115,7 +115,7 @@ export default function Feature3() {
           {/* Center column */}
           <div className="order-[1] mb-6 self-center sm:order-[0] md:mb-0">
 
-            <h2 className="text-[#155A52]  text-center text-4xl font-light mb-4 font-heading md:text-5xl">
+            <h2 className="text-[#155A52]  text-center text-5xl font-light mb-4 font-heading md:text-5xl">
               Why choose us?
             </h2>
             <p className="text-gray-800 text-md font-semibold mx-auto max-w-[18rem] text-center text-pretty">

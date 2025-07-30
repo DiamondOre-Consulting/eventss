@@ -31,7 +31,7 @@ const Home = () => {
               src="https://cdn.prod.website-files.com/67daff2a6e8cc98d865cc436%2F6818d7fcc152217e4e18e632_Martha%20King%20Intro-3-transcode.mp4"
             ></video>
             <div className="absolute z-10 inset-0  flex flex-col items-center justify-center flex-1 text-[#F3F4F6] text-center mt-10">
-              <h3 className="text-4xl md:text-6xl font-semibold mb-2">
+              <h3 className="text-4xl amarante-regular md:text-6xl font-semibold mb-2">
                Transcend the Ordinary
               </h3>
               <div className="text-xl md:text-3xl font-heading mb-8 w-[10rem] font-medium">
@@ -131,8 +131,8 @@ Eventours India has been internationally acclaimed for our distinctive vision in
 <VideoCarousel/>
 <div className="container  mx-auto px-6 py-20 md:py-28">
           <div className="text-center mb-8">
-            <h2 className="text-4xl text-[#155A52] font-light mb-4">
-              Real <em className="font-serif italic">stories</em><br />
+            <h2 className="text-5xl md:text-6xl font-heading text-[#155A52] font-semibold mb-4">
+              Real stories<br />
               from travelers
             </h2>
           </div>

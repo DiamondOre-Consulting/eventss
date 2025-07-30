@@ -117,6 +117,13 @@
 }
 
 
+.amarante-regular {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
