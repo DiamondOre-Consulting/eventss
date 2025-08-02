@@ -18,10 +18,6 @@ interface IconProps {
   className?: string;
 }
 
-interface BadgeProps {
-  children: React.ReactNode;
-  className?: string;
-}
 
 interface CardProps {
   card: CardData;
@@ -30,22 +26,7 @@ interface CardProps {
   totalCards: number;
 }
 
-const SparklesIcon: React.FC<IconProps> = ({ className }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className}
-  >
-    <path d="M9.93 2.25 12 7.5l2.07-5.25a.5.5 0 0 1 .9 0L17.25 8.5l4.16.34a.5.5 0 0 1 .29.88l-3.2 3.1.95 4.5a.5.5 0 0 1-.73.53L12 14.5l-3.72 2.33a.5.5 0 0 1-.73-.53l.95-4.5-3.2-3.1a.5.5 0 0 1 .29-.88l4.16-.34Z" />
-  </svg>
-);
+
 
 const ChevronLeftIcon: React.FC<IconProps> = ({ className }) => (
   <svg
@@ -81,13 +62,6 @@ const ChevronRightIcon: React.FC<IconProps> = ({ className }) => (
   </svg>
 );
 
-const Badge: React.FC<BadgeProps> = ({ children, className }) => (
-  <div
-    className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm font-medium ${className}`}
-  >
-    {children}
-  </div>
-);
 
 const cardData: CardData[] = [
   {
