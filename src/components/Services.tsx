@@ -27,27 +27,27 @@ const grid = [
   {
     title: "Tickets & Bookings",
     description:
-      "From domestic getaways to international adventures, we book flights that suit your schedule and budget. At Eventours, we ensure smooth, stress-free air travel—with trusted routes and competitive fares.",
+      "From domestic getaways to international adventures, we book flights that suit your schedule and budget. At Eventours, we ensure smooth, stress-free air travel with trusted routes and competitive fares.",
   },
   {
     title: "Hotel Reservations",
     description:
-      "From luxury resorts to cozy stays, we handpick hotels that match your travel style and budget. Our trusted network guarantees comfort and convenience—because every stay should feel like the right one.",
+      "From luxury resorts to cozy stays, we handpick hotels that match your travel style and budget. Our trusted network guarantees comfort and convenience because every stay should feel like the right one.",
   },
   {
     title: "Visa Assistance",
     description:
-      "Visa processes can be overwhelming—we simplify them for you. From documentation to embassy appointments, Eventours ensures your application is accurate, timely, and stress-free.",
+      "Visa processes can be overwhelming we simplify them for you. From documentation to embassy appointments, Eventours ensures your application is accurate, timely, and stress-free.",
   },
   {
     title: "Sightseeing",
     description:
-      "We don’t just show you places—we let you live them. From must-see spots to hidden gems, enjoy immersive local experiences tailored to your style.",
+      "We don’t just show you places we let you live them. From must-see spots to hidden gems, enjoy immersive local experiences tailored to your style.",
   },
   {
     title: "Holidays & Vacation Packages",
     description:
-      "At Eventours, we design holidays that fit you—your vibe, your pace, your dreams and build 100% customized holiday plans. From destination to detail, every trip is hand-built to match exactly how you want to travel.",
+      "At Eventours, we design holidays that fit you your vibe, your pace, your dreams and build 100% customized holiday plans. From destination to detail, every trip is hand-built to match exactly how you want to travel.",
   },
   {
     title: "Corporate Conferences & Offsite Events",
@@ -57,7 +57,7 @@ const grid = [
   {
     title: "Weddings Celebrations",
     description:
-      "Weddings are once-in-a-lifetime—and we treat them that way. Eventours handles every element of your celebration, creating elegant, effortless events in breathtaking locations.",
+      "Weddings are once-in-a-lifetime and we treat them that way. Eventours handles every element of your celebration, creating elegant, effortless events in breathtaking locations.",
   },
     {
       title: "Customised Ski Guided Experiences",
