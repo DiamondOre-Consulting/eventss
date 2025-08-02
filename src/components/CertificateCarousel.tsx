@@ -132,7 +132,7 @@ export default function CertificateCarousel() {
   };
 
   const onDragEnd = (
-
+    _: MouseEvent | TouchEvent | PointerEvent,
     info: PanInfo
   ) => {
     const dragThreshold = window.innerWidth >= 768 ? 70 : 80;
