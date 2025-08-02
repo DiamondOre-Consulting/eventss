@@ -66,7 +66,7 @@ const rightFeatures: FeatureItem[] = [
     icon: Route,
     title: 'IT IS YOUR TRIP',
     description:
-      'No generic group tours—our personalized approach puts you in complete control of your holiday experience.',
+      'No generic group tours our personalized approach puts you in complete control of your holiday experience.',
     position: 'right',
     cornerStyle: 'sm:-translate-x-4 sm:rounded-tl-[2px]',
   },
@@ -119,8 +119,8 @@ export default function Feature3() {
               Why choose us?
             </h2>
             <p className="text-gray-800 text-md font-semibold mx-auto max-w-[18rem] text-center text-pretty">
-              Cohorts are best way to learn because you finish the course in a
-              timely manner
+              {/* Cohorts are best way to learn because you finish the course in a
+              timely manner */}
             </p>
           </div>
 

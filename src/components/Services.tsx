@@ -62,7 +62,7 @@ const grid = [
     {
       title: "Customised Ski Guided Experiences",
       description:
-        "Embark on a ski journey designed around you. From personalized slopes to expert guides and full support on-ground, Eventours crafts unforgettable ski experiences tailored to your skill and style.",
+        "Embark on a ski journey designed around you. From identifying slopes to expert guides and full support on-ground, Eventours crafts unforgettable ski experiences tailored to your skill and style.",
     },
 ];
 
