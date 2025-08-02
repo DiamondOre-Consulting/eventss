@@ -6,6 +6,7 @@ import img3 from '../assets/img3.jpg';
 import img4 from '../assets/img4.jpg';
 import img5 from '../assets/img5.jpg';
 import img6 from '../assets/img6.jpg';
+import CertificateCarousel from '../components/CertificateCarousel';
 import { Gallery } from '../components/Gallery';
 import Feature3 from '../components/mvpblocks/feature-3';
 import { Services } from '../components/Services';
@@ -50,7 +51,7 @@ those who find beauty in the details.</p>
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-5xl md:text-6xl text-[#155A52] font-heading  italic  font-light mb-4 md:mb-8">
-        <em className="">Customized</em> travels
+        <em className="">Customized</em> Travels
 
             </h2>
             <p className="text-gray-800 max-w-3xl text-lg md:text-[1.2rem] mx-auto">
@@ -129,6 +130,16 @@ Eventours India has been internationally acclaimed for our distinctive vision in
 <Feature3/>
 
 <VideoCarousel/>
+
+<div className='py-20 bg-white w-full'>
+   <h2 className="text-5xl md:text-6xl text-center text-[#155A52] font-heading  italic  font-light ">
+       Appreciation Certificates
+
+            </h2>
+<CertificateCarousel/>
+
+</div>
+
 <div className="container  mx-auto px-6 py-20 md:py-28">
           <div className="text-center mb-8">
             <h2 className="text-5xl md:text-6xl font-heading text-[#155A52] font-semibold mb-4">

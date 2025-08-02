@@ -22,24 +22,24 @@ const VideoCarousel = () => {
   const videos: Video[] = [
     {
       id: 1,
-      title: "Discover Oman, a haven for adventure enthusiasts",
-      src: "https://www.nchirag.com/nchiragsecure/public/sliderimg/ExperienceOman.mp4",
+      title: "Discover Destinations",
+      src: "https://videos.pexels.com/video-files/1820193/1820193-uhd_2560_1440_30fps.mp4",
       thumbnail:
-        "https://images.pexels.com/photos/5612268/pexels-photo-5612268.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/261204/pexels-photo-261204.jpeg",
     },
     {
       id: 2,
-      title: "Exploring the deserts of Oman",
-      src: "https://www.nchirag.com/nchiragsecure/public/sliderimg/ExperienceOman.mp4",
+      title: "Discover Destinations",
+      src: "https://videos.pexels.com/video-files/3018669/3018669-hd_1920_1080_24fps.mp4",
       thumbnail:
-        "https://images.pexels.com/photos/14704955/pexels-photo-14704955.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/5504509/pexels-photo-5504509.jpeg",
     },
     {
       id: 3,
-      title: "Omani coastal wonders",
-      src: "https://www.nchirag.com/nchiragsecure/public/sliderimg/ExperienceOman.mp4",
+      title: "Discover Destinations",
+      src: "https://videos.pexels.com/video-files/4133023/4133023-uhd_2560_1440_30fps.mp4",
       thumbnail:
-        "https://images.pexels.com/photos/15450222/pexels-photo-15450222/free-photo-of-winter-in-lofoten.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1450340/pexels-photo-1450340.jpeg",
     },
   ];
 
@@ -119,7 +119,7 @@ const VideoCarousel = () => {
                   className="absolute inset-0 bg-black/30 gap-2 flex-col flex items-center justify-center cursor-pointer"
                   onClick={() => openModal(video)}
                 >
-                  <h2 className="text-3xl md:text-4xl text-white font-semibold">
+                  <h2 className="text-3xl text-center md:text-4xl text-white font-semibold">
                     {video.title}
                   </h2>
                   <div className="bg-white/70 rounded-full p-3 hover:bg-opacity-100 transition-all">
