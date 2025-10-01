@@ -1,90 +1,91 @@
 'use client';
 
-import { CardHoverEffect } from '@/components/ui/pulse-card';
+// import { CardHoverEffect } from '@/components/ui/pulse-card';
 import { Spotlight } from '@/components/ui/spotlight';
-import { motion, useInView } from 'framer-motion';
-import {
-  Globe,
-  Heart,
-  Lightbulb,
-  Rocket,
-  Sparkles,
-  Target,
-  Users,
-} from 'lucide-react';
-import { useRef } from 'react';
+// import { motion, useInView } from 'framer-motion';
+// import {
+//   Globe,
+//   Heart,
+//   Lightbulb,
+//   Rocket,
+//   Sparkles,
+//   Target,
+//   Users,
+// } from 'lucide-react';
+// import { useRef } from 'react';
+import { OurApproachTimeline } from './OurApproachTimeline';
 
-interface AboutUsProps {
-  title?: string;
-  subtitle?: string;
-  mission?: string;
-  vision?: string;
-  values?: Array<{
-    title: string;
-    description: string;
-    icon: keyof typeof iconComponents;
-  }>;
-  className?: string;
-}
+// interface AboutUsProps {
+//   title?: string;
+//   subtitle?: string;
+//   mission?: string;
+//   vision?: string;
+//   values?: Array<{
+//     title: string;
+//     description: string;
+//     icon: keyof typeof iconComponents;
+//   }>;
+//   className?: string;
+// }
 
-const iconComponents = {
-  Users: Users,
-  Heart: Heart,
-  Lightbulb: Lightbulb,
-  Globe: Globe,
-  Sparkles: Sparkles,
-  Rocket: Rocket,
-  Target: Target,
-};
+// const iconComponents = {
+//   Users: Users,
+//   Heart: Heart,
+//   Lightbulb: Lightbulb,
+//   Globe: Globe,
+//   Sparkles: Sparkles,
+//   Rocket: Rocket,
+//   Target: Target,
+// };
 
-const defaultValues: AboutUsProps['values'] = [
-  {
-    title: `LET'S TALK!`,
-    description:
-      'You will have an expert travel designer to help you create the trip of your dreams.',
-    icon: 'Lightbulb',
-  },
-  {
-    title: 'GETTING CREATIVE!',
-    description:
-      `We'll design an innovative itinerary with superb accommodation and experiences.`,
-    icon: 'Users',
-  },
-  {
-    title: 'FOLLOW YOUR PASSIONS!',
-    description:
-      'We can build your trip around a theme with activities suitable for all.',
-    icon: 'Sparkles',
-  },
-  {
-    title: `LET'S DO IT!`,
-    description:
-      "Once approved, we'll configure all arrangements for your hassle-free trip.",
-    icon: 'Globe',
-  },
-];
+// const defaultValues: AboutUsProps['values'] = [
+//   {
+//     title: `LET'S TALK!`,
+//     description:
+//       'You will have an expert travel designer to help you create the trip of your dreams.',
+//     icon: 'Lightbulb',
+//   },
+//   {
+//     title: 'GETTING CREATIVE!',
+//     description:
+//       `We'll design an innovative itinerary with superb accommodation and experiences.`,
+//     icon: 'Users',
+//   },
+//   {
+//     title: 'FOLLOW YOUR PASSIONS!',
+//     description:
+//       'We can build your trip around a theme with activities suitable for all.',
+//     icon: 'Sparkles',
+//   },
+//   {
+//     title: `LET'S DO IT!`,
+//     description:
+//       "Once approved, we'll configure all arrangements for your hassle-free trip.",
+//     icon: 'Globe',
+//   },
+// ];
 
 export default function OurApproachCard() {
-  const aboutData = {
-    title: 'About Us',
-    subtitle:
-      'Building the future of web development with beautiful, reusable components.',
-    mission:
-      'Our mission is to democratize web development by providing high-quality, customizable components that help developers build stunning websites quickly and efficiently.',
-    vision:
-      'We envision a world where creating beautiful websites is accessible to everyone, regardless of their design or development experience.',
-    values: defaultValues,
-    className: 'relative overflow-hidden py-20',
-  };
+  // const aboutData = {
+  //   title: 'About Us',
+  //   subtitle:
+  //     'Building the future of web development with beautiful, reusable components.',
+  //   mission:
+  //     'Our mission is to democratize web development by providing high-quality, customizable components that help developers build stunning websites quickly and efficiently.',
+  //   vision:
+  //     'We envision a world where creating beautiful websites is accessible to everyone, regardless of their design or development experience.',
+  //   values: defaultValues,
+  //   className: 'relative overflow-hidden py-20',
+  // };
 
   // const missionRef = useRef(null);
-  const valuesRef = useRef(null);
+  // const valuesRef = useRef(null);
 
   // const missionInView = useInView(missionRef, { once: true, amount: 0.3 });
-  const valuesInView = useInView(valuesRef, { once: true, amount: 0.3 });
+  // const valuesInView = useInView(valuesRef, { once: true, amount: 0.3 });
 
   return (
-    <section className="relative w-full overflow-hidden pt-20">
+    <section className="relative w-full overflow-hidden">
       <Spotlight
         gradientFirst="radial-gradient(68.54% 68.72% at 55.02% 31.46%, hsla(336, 100%, 50%, 0.08) 0, hsla(341, 100%, 55%, 0.04) 50%, hsla(336, 100%, 45%, 0) 80%)"
         gradientSecond="radial-gradient(50% 50% at 50% 50%, hsla(333, 100%, 85%, 0.08) 0, hsla(335, 100%, 55%, 0.04) 80%, transparent 100%)"
@@ -166,8 +167,8 @@ export default function OurApproachCard() {
             </motion.div>
           </motion.div>
         </div> */}
-
-        <div ref={valuesRef} className="mb-24">
+<OurApproachTimeline  />
+        {/* <div ref={valuesRef} className="">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={
@@ -177,7 +178,7 @@ export default function OurApproachCard() {
             className="mb-12 text-center"
           >
             <h2 className="from-foreground/80 via-foreground to-foreground/80 bg-gradient-to-r bg-clip-text text-3xl font-bold tracking-tight text-transparent sm:text-4xl">
-              Our Core Values
+              Our Approach
             </h2>
             <p className="text-muted-foreground mx-auto mt-4 max-w-2xl text-lg">
               The principles that guide everything we do and every decision we
@@ -223,7 +224,7 @@ export default function OurApproachCard() {
               );
             })}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
